@@ -16,7 +16,7 @@ const sizes = {
   lg: 'px-10 py-4 text-base',
 };
 
-function MagneticContent({ children, variant, size, className, ...props }) {
+function MagneticContent({ children, variant, size, className = '', ...props }) {
   const ref = useRef(null);
 
   // Motion values for magnetic pull
@@ -50,6 +50,7 @@ function MagneticContent({ children, variant, size, className, ...props }) {
     y.set(0);
   };
 
+  const isFullWidth = className.includes('w-full');
   const baseClasses = `relative inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-300 cursor-pointer select-none overflow-hidden group ${variants[variant]} ${sizes[size]} ${className}`;
 
   const { className: _unused, ...restProps } = props;
@@ -62,7 +63,7 @@ function MagneticContent({ children, variant, size, className, ...props }) {
       style={{ x: springX, y: springY }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className="inline-flex"
+      className={`inline-flex ${isFullWidth ? 'w-full' : ''}`}
     >
       <div className={baseClasses} {...restProps}>
         {/* Light Sweep Effect */}
@@ -104,10 +105,11 @@ export default function Button({
   );
 
   const sharedProps = { variant, size, className, ...props };
+  const wrapperClasses = `inline-flex ${className.includes('w-full') ? 'w-full' : ''} ${className}`;
 
   if (to) {
     return (
-      <Link to={to} className={`inline-flex ${className}`}>
+      <Link to={to} className={wrapperClasses}>
         <MagneticContent {...sharedProps}>{content}</MagneticContent>
       </Link>
     );
@@ -115,14 +117,14 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-flex ${className}`}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={wrapperClasses}>
         <MagneticContent {...sharedProps}>{content}</MagneticContent>
       </a>
     );
   }
 
   return (
-    <div className={`inline-flex ${className}`}>
+    <div className={wrapperClasses}>
       <button
         type={type}
         onClick={onClick}

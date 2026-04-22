@@ -60,8 +60,8 @@ export default function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 mb-12">
-              <Button to="/book" size="lg">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-12 w-full max-w-sm sm:max-w-none">
+              <Button to="/book" size="lg" className="w-full sm:w-auto">
                 Book Appointment
               </Button>
               <Button
@@ -69,6 +69,7 @@ export default function Hero() {
                 variant="secondary"
                 size="lg"
                 icon={Phone}
+                className="w-full sm:w-auto"
               >
                 Call Now
               </Button>

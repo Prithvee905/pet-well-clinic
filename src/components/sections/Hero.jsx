@@ -105,8 +105,8 @@ export default function Hero() {
               {/* Main Image Card */}
               <div className="relative aspect-[4/4.5] sm:aspect-[4/4] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl">
                 <img
-                  src="/images/hero-vet.png"
-                  alt="Veterinarian at Petwell Clinic with a happy pet"
+                  src="/images/doctor-swathi.png"
+                  alt="Dr. Swathi - Veterinarian at Petwell Clinic"
                   className="w-full h-full object-cover"
                   loading="eager"
                 />

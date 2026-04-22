@@ -75,17 +75,17 @@ export default function Hero() {
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-3">
+            <div className="grid grid-cols-2 gap-3">
               {badges.map((badge, i) => (
                 <motion.div
                   key={badge.label}
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
-                  className="flex items-center gap-2.5 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 border border-border-soft shadow-sm hover:border-primary/30 transition-colors"
+                  className="flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-3 py-2 border border-border-soft shadow-sm hover:border-primary/30 transition-colors"
                 >
-                  <badge.icon className="w-4 h-4 text-primary" />
-                  <span className="text-[13px] font-semibold text-text-dark">
+                  <badge.icon className="w-4 h-4 text-primary shrink-0" />
+                  <span className="text-[12px] sm:text-[13px] font-semibold text-text-dark whitespace-nowrap">
                     {badge.label}
                   </span>
                 </motion.div>

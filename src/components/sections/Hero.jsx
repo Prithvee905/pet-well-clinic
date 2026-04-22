@@ -59,8 +59,8 @@ export default function Hero() {
               pets.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-row items-center gap-3 sm:gap-4 mb-10">
+            {/* CTA Buttons — visible on desktop only (inside text column) */}
+            <div className="hidden lg:flex flex-row items-center gap-4 mb-10">
               <Button to="/book" size="lg">
                 Book Appointment
               </Button>
@@ -141,8 +141,30 @@ export default function Hero() {
               </motion.div>
             </div>
           </motion.div>
+
+          {/* CTA Buttons — visible on mobile only, BELOW the image */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="order-3 lg:hidden flex flex-row items-stretch gap-3 w-full"
+          >
+            <Button to="/book" size="lg" className="flex-1 text-center">
+              Book Appointment
+            </Button>
+            <Button
+              href={`tel:${clinicInfo.phone}`}
+              variant="secondary"
+              size="lg"
+              icon={Phone}
+              className="flex-1 text-center"
+            >
+              Call Now
+            </Button>
+          </motion.div>
         </div>
       </div>
     </section>
   );
 }
+

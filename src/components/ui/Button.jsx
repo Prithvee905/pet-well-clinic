@@ -50,8 +50,8 @@ function MagneticContent({ children, variant, size, className = '', ...props }) 
     y.set(0);
   };
 
-  const isFullWidth = className.includes('w-full');
-  const baseClasses = `relative inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-300 cursor-pointer select-none overflow-hidden group ${variants[variant]} ${sizes[size]} ${className}`;
+  const needsFullWidth = className.includes('w-full') || className.includes('flex-1');
+  const baseClasses = `relative inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-300 cursor-pointer select-none overflow-hidden group ${variants[variant]} ${sizes[size]} ${needsFullWidth ? 'w-full' : ''}`;
 
   const { className: _unused, ...restProps } = props;
 
@@ -63,7 +63,7 @@ function MagneticContent({ children, variant, size, className = '', ...props }) 
       style={{ x: springX, y: springY }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className={`inline-flex ${isFullWidth ? 'w-full' : ''}`}
+      className={`inline-flex ${needsFullWidth ? 'w-full' : ''}`}
     >
       <div className={baseClasses} {...restProps}>
         {/* Light Sweep Effect */}
@@ -105,7 +105,9 @@ export default function Button({
   );
 
   const sharedProps = { variant, size, className, ...props };
-  const wrapperClasses = `inline-flex ${className.includes('w-full') ? 'w-full' : ''} ${className}`;
+  const needsFlex = className.includes('flex-1');
+  const needsFullWidth = className.includes('w-full') || needsFlex;
+  const wrapperClasses = `${needsFlex ? 'flex-1' : 'inline-flex'} ${needsFullWidth ? 'w-full' : ''} ${className}`;
 
   if (to) {
     return (

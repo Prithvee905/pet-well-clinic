@@ -103,15 +103,13 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-[480px] lg:max-w-full">
               {/* Main Image Card */}
-              <div className="relative aspect-[4/4.5] sm:aspect-[4/4] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl">
+              <div className="relative rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-gradient-to-b from-primary/5 to-accent/5">
                 <img
                   src="/images/doctor-swathi.png"
                   alt="Dr. Swathi - Veterinarian at Petwell Clinic"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                   loading="eager"
                 />
-                {/* Soft gradient overlay at bottom */}
-                <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white/40 to-transparent" />
               </div>
 
               {/* Floating accent cards */}

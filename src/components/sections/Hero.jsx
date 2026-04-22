@@ -25,21 +25,21 @@ export default function Hero() {
         <Heart className="absolute top-[25%] left-[12%] w-5 h-5 text-primary/[0.06]" />
       </div>
 
-      <div className="container-main relative z-10">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Text Content */}
+      <div className="container-main relative z-10 py-8 lg:py-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          {/* Text Content — FIRST on mobile, left on desktop */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="order-2 lg:order-1"
+            className="order-1 lg:order-1"
           >
             {/* Clinic badge */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="inline-flex items-center gap-2.5 bg-white rounded-full px-5 py-2.5 mb-8 border border-border-soft shadow-sm"
+              className="inline-flex items-center gap-2.5 bg-white rounded-full px-5 py-2.5 mb-6 border border-border-soft shadow-sm"
             >
               <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse-soft" />
               <span className="text-[13px] font-semibold text-text-muted uppercase tracking-wider">
@@ -60,8 +60,8 @@ export default function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-12 w-full max-w-sm sm:max-w-none">
-              <Button to="/book" size="lg" className="w-full sm:w-auto">
+            <div className="flex flex-row items-center gap-3 sm:gap-4 mb-10">
+              <Button to="/book" size="lg">
                 Book Appointment
               </Button>
               <Button
@@ -69,7 +69,6 @@ export default function Hero() {
                 variant="secondary"
                 size="lg"
                 icon={Phone}
-                className="w-full sm:w-auto"
               >
                 Call Now
               </Button>
@@ -83,7 +82,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
-                  className="flex items-center gap-2.5 bg-white/80 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border-soft shadow-sm hover:border-primary/30 transition-colors"
+                  className="flex items-center gap-2.5 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 border border-border-soft shadow-sm hover:border-primary/30 transition-colors"
                 >
                   <badge.icon className="w-4 h-4 text-primary" />
                   <span className="text-[13px] font-semibold text-text-dark">
@@ -94,14 +93,14 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Hero Image / Visual */}
+          {/* Hero Image — SECOND on mobile, right on desktop */}
           <motion.div
             initial={{ opacity: 0, x: 30, scale: 0.96 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
-            className="order-1 lg:order-2 flex justify-center"
+            className="order-2 lg:order-2 flex justify-center"
           >
-            <div className="relative w-full max-w-[480px] lg:max-w-full">
+            <div className="relative w-full max-w-[320px] sm:max-w-[400px] lg:max-w-full">
               {/* Main Image Card */}
               <div className="relative rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-gradient-to-b from-primary/5 to-accent/5">
                 <img

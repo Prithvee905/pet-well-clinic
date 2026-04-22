@@ -149,13 +149,13 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="order-3 lg:hidden flex flex-row items-stretch gap-3 w-full"
           >
-            <Button to="/book" size="lg" className="flex-1 text-center">
+            <Button to="/book" size="sm" className="flex-1 text-center">
               Book Appointment
             </Button>
             <Button
               href={`tel:${clinicInfo.phone}`}
               variant="secondary"
-              size="lg"
+              size="sm"
               icon={Phone}
               className="flex-1 text-center"
             >

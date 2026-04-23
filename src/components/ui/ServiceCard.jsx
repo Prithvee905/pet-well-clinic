@@ -7,18 +7,18 @@ export default function ServiceCard({ service, index = 0 }) {
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.3 }}
-      className="group relative bg-white rounded-[2rem] p-8 border border-border-soft shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500 cursor-default h-full"
+      className="group relative bg-bg-blush rounded-2xl p-5 sm:p-6 border border-border-soft shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] hover:bg-white transition-all duration-500 cursor-default h-full"
     >
       {/* Icon */}
       <div
-        className="w-16 h-16 rounded-2xl bg-bg-pink-soft flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-lg group-hover:-translate-y-1"
+        className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-lg group-hover:-translate-y-1"
       >
-        <Icon className="w-7 h-7 text-primary group-hover:text-white transition-all duration-500 group-hover:scale-110" />
+        <Icon className="w-6 h-6 text-primary group-hover:text-white transition-all duration-500 group-hover:scale-110" />
       </div>
 
       {/* Content */}
       <div>
-        <h3 className="text-xl font-bold text-text-dark mb-3 group-hover:text-primary transition-colors duration-300">
+        <h3 className="text-base sm:text-lg font-bold text-text-dark mb-2 group-hover:text-primary transition-colors duration-300">
           {service.title}
         </h3>
         <p className="text-sm text-text-muted leading-relaxed">

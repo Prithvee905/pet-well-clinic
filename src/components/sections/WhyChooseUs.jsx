@@ -97,7 +97,7 @@ export default function WhyChooseUs() {
         {reasons.map((reason, i) => (
           <div
             key={reason.title}
-            className="flex-shrink-0 w-[220px] sm:w-[260px] lg:w-[280px] snap-start"
+            className="flex-shrink-0 w-[220px] sm:w-[260px] lg:w-[290px] snap-start"
           >
             <motion.div
               whileHover={{ y: -4 }}

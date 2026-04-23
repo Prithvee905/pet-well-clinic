@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import Hero from '@/components/sections/Hero';
 import ServicesPreview from '@/components/sections/ServicesPreview';
+import PricingPlans from '@/components/sections/PricingPlans';
 import AboutPreview from '@/components/sections/AboutPreview';
 import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import GalleryPreview from '@/components/sections/GalleryPreview';
@@ -21,6 +22,7 @@ export default function Home() {
 
       <Hero />
       <ServicesPreview />
+      <PricingPlans />
       <AboutPreview />
       <WhyChooseUs />
       <GalleryPreview />

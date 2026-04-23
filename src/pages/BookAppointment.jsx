@@ -34,8 +34,11 @@ const timeSlots = [
   { value: '19:00', label: '7:00 PM' },
 ];
 
+import { supabase } from '@/lib/supabase';
+
 export default function BookAppointment() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const {
     register,
@@ -45,11 +48,39 @@ export default function BookAppointment() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    // Simulate submission — will connect to Supabase later
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-    console.log('Appointment data:', data);
-    setSubmitted(true);
-    reset();
+    setError(null);
+    try {
+      if (!supabase) {
+        throw new Error('Supabase client not initialized. Check your .env file.');
+      }
+
+      const { error: supabaseError } = await supabase
+        .from('appointments')
+        .insert([
+          {
+            owner_name: data.ownerName,
+            phone: data.phone,
+            email: data.email,
+            pet_name: data.petName,
+            pet_type: data.petType,
+            pet_age: data.petAge,
+            service: data.service,
+            preferred_date: data.preferredDate,
+            preferred_time: data.preferredTime,
+            notes: data.notes,
+            status: 'pending',
+            created_at: new Date().toISOString(),
+          },
+        ]);
+
+      if (supabaseError) throw supabaseError;
+
+      setSubmitted(true);
+      reset();
+    } catch (err) {
+      console.error('Submission error:', err);
+      setError(err.message || 'Failed to request appointment. Please try again.');
+    }
   };
 
   return (
@@ -132,6 +163,11 @@ export default function BookAppointment() {
                   className="space-y-5"
                   noValidate
                 >
+                  {error && (
+                    <div className="p-4 bg-red-50 border border-red-100 rounded-xl text-red-600 text-sm">
+                      {error}
+                    </div>
+                  )}
                   {/* Owner Info */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <FormInput

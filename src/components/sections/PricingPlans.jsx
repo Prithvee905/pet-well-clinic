@@ -106,7 +106,7 @@ export default function PricingPlans() {
               className="group relative bg-bg-blush rounded-2xl p-6 border border-border-soft hover:bg-white hover:shadow-[var(--shadow-card-hover)] transition-all duration-300 h-full flex flex-col"
             >
               {/* Tag */}
-              <span className="inline-block self-start text-[11px] font-bold uppercase tracking-wider text-secondary bg-secondary/10 rounded-full px-3 py-1 mb-4">
+              <span className="inline-block self-start text-[11px] font-bold uppercase tracking-wider text-secondary bg-secondary/15 rounded-full px-3 py-1 mb-4">
                 {plan.tag}
               </span>
 
@@ -122,7 +122,7 @@ export default function PricingPlans() {
               <div className="flex items-baseline gap-2.5 mb-5">
                 <span className="text-3xl font-extrabold text-text-dark">₹{plan.price}</span>
                 <span className="text-base text-text-light line-through">₹{plan.originalPrice}</span>
-                <span className="text-[11px] font-semibold text-secondary bg-secondary/10 rounded-full px-2 py-0.5">
+                <span className="text-[11px] font-semibold text-secondary bg-secondary/15 rounded-full px-2 py-0.5">
                   Save ₹{plan.originalPrice - plan.price}
                 </span>
               </div>
@@ -134,7 +134,7 @@ export default function PricingPlans() {
               <ul className="space-y-2.5 mb-6 flex-1">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2.5">
-                    <div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-5 h-5 rounded-full bg-secondary/15 flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-secondary" />
                     </div>
                     <span className="text-sm text-text-muted">{feature}</span>

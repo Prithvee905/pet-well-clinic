@@ -8,6 +8,7 @@ import GalleryPreview from '@/components/sections/GalleryPreview';
 import Testimonials from '@/components/sections/Testimonials';
 import BookingCTA from '@/components/sections/BookingCTA';
 import ContactPreview from '@/components/sections/ContactPreview';
+import BrandBanner from '@/components/sections/BrandBanner';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <GalleryPreview />
       <Testimonials />
       <BookingCTA />
+      <BrandBanner />
       <ContactPreview />
     </>
   );

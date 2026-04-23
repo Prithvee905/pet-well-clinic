@@ -12,6 +12,9 @@ import Gallery from '@/pages/Gallery';
 import BookAppointment from '@/pages/BookAppointment';
 import Contact from '@/pages/Contact';
 
+import FloatingActions from '@/components/ui/FloatingActions';
+import AutoBookingModal from '@/components/ui/AutoBookingModal';
+
 export default function App() {
   return (
     <HelmetProvider>
@@ -31,6 +34,8 @@ export default function App() {
               </Routes>
             </main>
             <Footer />
+            <AutoBookingModal />
+            <FloatingActions />
           </div>
         </SmoothScroll>
       </BrowserRouter>

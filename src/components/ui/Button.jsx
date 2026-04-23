@@ -51,9 +51,9 @@ function MagneticContent({ children, variant, size, className = '', ...props }) 
   };
 
   const needsFullWidth = className.includes('w-full') || className.includes('flex-1');
-  const baseClasses = `relative inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-300 cursor-pointer select-none overflow-hidden group ${variants[variant]} ${sizes[size]} ${needsFullWidth ? 'w-full' : ''}`;
+  const baseClasses = `relative inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-300 cursor-pointer select-none overflow-hidden group ${variants[variant]} ${sizes[size]} ${needsFullWidth ? 'w-full' : ''} ${className}`;
 
-  const { className: _unused, ...restProps } = props;
+  const { ...restProps } = props;
 
   return (
     <motion.div

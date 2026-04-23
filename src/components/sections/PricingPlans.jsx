@@ -106,7 +106,7 @@ export default function PricingPlans() {
               className="group relative bg-bg-blush rounded-2xl p-6 border border-border-soft hover:bg-white hover:shadow-[var(--shadow-card-hover)] transition-all duration-300 h-full flex flex-col"
             >
               {/* Tag */}
-              <span className="inline-block self-start text-[11px] font-bold uppercase tracking-wider text-secondary bg-secondary/15 rounded-full px-3 py-1 mb-4">
+              <span className={`inline-block self-start text-[11px] font-bold uppercase tracking-wider rounded-full px-3 py-1 mb-4 ${i === 1 ? 'text-white bg-sea-blue' : 'text-secondary bg-secondary/15'}`}>
                 {plan.tag}
               </span>
 

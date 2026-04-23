@@ -15,6 +15,8 @@
   --color-secondary-light: #48B77E;
   --color-accent: #E9C46A;
   --color-accent-light: #F4DFA0;
+  --color-sea-blue: #0077B6; /* Vibrant Sea Blue for accents and highlights */
+  --color-sea-blue-light: #48CAE4;
 
   /* Backgrounds — Light beige/cream tones */
   --color-bg-blush: #FDF8F3;

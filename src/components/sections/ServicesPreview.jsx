@@ -58,7 +58,7 @@ export default function ServicesPreview() {
         {services.map((service, i) => (
           <div
             key={service.id}
-            className="flex-shrink-0 w-[280px] sm:w-[300px] lg:w-[320px] snap-start"
+            className="flex-shrink-0 w-[220px] sm:w-[260px] lg:w-[300px] snap-start"
           >
             <ServiceCard service={service} index={i} />
           </div>

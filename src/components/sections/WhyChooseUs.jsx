@@ -100,11 +100,8 @@ export default function WhyChooseUs() {
             className="flex-shrink-0 w-[260px] sm:w-[280px] lg:w-[300px] snap-start"
           >
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
+              transition={{ duration: 0.3 }}
               className="group p-6 rounded-2xl border border-border-soft bg-bg-blush hover:bg-white hover:shadow-[var(--shadow-card-hover)] transition-all duration-300 h-full"
             >
               <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300 shadow-sm">

@@ -25,6 +25,13 @@ export const services = [
     fullDesc: 'Routine health checkups are the foundation of your pet\'s well-being. Our thorough examinations include weight monitoring, dental assessment, heart and lung evaluation, and age-appropriate screenings to keep your companion in optimal health.',
   },
   {
+    id: 'ultrasound',
+    icon: ScanLine,
+    title: 'Diagnosis Support & Ultrasound',
+    shortDesc: 'Advanced ultrasound imaging and diagnostic tools for accurate, non-invasive health assessments.',
+    fullDesc: 'Our diagnostic capabilities include ultrasound imaging, allowing us to visualize internal organs in real-time. This non-invasive technology helps us diagnose conditions quickly and develop effective treatment plans without unnecessary procedures.',
+  },
+  {
     id: 'surgery',
     icon: HeartPulse,
     title: 'Surgery Support',
@@ -37,13 +44,6 @@ export const services = [
     title: 'Grooming & Bathing',
     shortDesc: 'Professional grooming services to keep your pet looking and feeling their best.',
     fullDesc: 'Our gentle grooming team provides bathing, brushing, nail trimming, ear cleaning, and breed-specific styling. We use pet-safe products and create a calm, stress-free grooming experience your pet will actually enjoy.',
-  },
-  {
-    id: 'ultrasound',
-    icon: ScanLine,
-    title: 'Ultrasound & Diagnostics',
-    shortDesc: 'Advanced imaging and diagnostic tools for accurate and timely health assessments.',
-    fullDesc: 'Our diagnostic capabilities include ultrasound imaging, allowing us to visualize internal organs in real-time. This non-invasive technology helps us diagnose conditions quickly and develop effective treatment plans without unnecessary procedures.',
   },
   {
     id: 'xray',

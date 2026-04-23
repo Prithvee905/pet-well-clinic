@@ -47,7 +47,7 @@ export default function ServiceCard({ service, index = 0 }) {
         rotateY,
         transformStyle: 'preserve-3d',
       }}
-      className="group relative bg-white rounded-[2rem] p-8 border border-border-soft shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500 cursor-default"
+      className="group relative bg-white rounded-[2rem] p-8 border border-border-soft shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-500 cursor-default h-full"
     >
       {/* Icon with 3D Pop */}
       <div

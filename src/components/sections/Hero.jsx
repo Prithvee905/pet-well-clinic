@@ -133,8 +133,8 @@ export default function Hero() {
                   <ShieldCheck className="w-4 h-4 text-green-500" />
                 </div>
                 <div>
-                  <p className="text-[11px] font-bold text-text-dark">Trusted</p>
-                  <p className="text-[9px] text-text-muted">Verified Care</p>
+                  <p className="text-[11px] font-bold text-text-dark">Certified</p>
+                  <p className="text-[9px] text-text-muted">Professional</p>
                 </div>
               </motion.div>
             </div>

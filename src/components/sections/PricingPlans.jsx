@@ -143,7 +143,7 @@ export default function PricingPlans() {
               </ul>
 
               {/* CTA */}
-              <Button to="/book" size="sm" variant={i === 0 ? 'primary' : 'outline'} className="w-full">
+              <Button to="/book" size="sm" variant="primary" className="w-full">
                 Book Now
               </Button>
             </motion.div>

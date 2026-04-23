@@ -34,10 +34,10 @@ export default function BookingCTA() {
               Schedule a Visit
             </Button>
             <Button
-              href="tel:+919876543210"
+              href={`tel:${clinicInfo.phone.replace(/\s+/g, '')}`}
               variant="outline"
               size="lg"
-              className="!border-white/30 !text-white hover:!bg-white/10"
+              className="!border-white/40 !text-white hover:!bg-white/10"
             >
               Call Us Now
             </Button>

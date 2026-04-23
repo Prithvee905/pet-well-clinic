@@ -100,7 +100,7 @@ export default function AboutPreview() {
               ))}
             </div>
 
-            <Button to="/about" variant="outline">
+            <Button to="/about" variant="primary">
               Learn More About Us
             </Button>
           </motion.div>

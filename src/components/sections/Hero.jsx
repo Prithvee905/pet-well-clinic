@@ -47,7 +47,7 @@ export default function Hero() {
 
             <h1 className="text-[2rem] sm:text-4xl lg:text-[3.5rem] xl:text-6xl font-extrabold text-text-dark leading-[1.15] mb-4">
               Compassionate{' '}
-              <span className="text-primary">Veterinary Care</span>{' '}
+              <span className="text-secondary">Veterinary Care</span>{' '}
               for Every Paw
             </h1>
 
@@ -82,7 +82,7 @@ export default function Hero() {
                   transition={{ duration: 0.4, delay: 0.5 + i * 0.08 }}
                   className="flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 border border-border-soft shadow-sm"
                 >
-                  <badge.icon className="w-3.5 h-3.5 text-primary shrink-0" />
+                  <badge.icon className="w-3.5 h-3.5 text-secondary shrink-0" />
                   <span className="text-[11px] sm:text-[12px] font-semibold text-text-dark whitespace-nowrap">
                     {badge.label}
                   </span>
@@ -116,7 +116,7 @@ export default function Hero() {
                 className="absolute -bottom-3 -left-2 sm:-left-4 bg-white rounded-xl px-3 py-2 shadow-lg border border-border-soft flex items-center gap-2"
               >
                 <div className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center">
-                  <Heart className="w-4 h-4 text-primary fill-primary" />
+                  <Heart className="w-4 h-4 text-secondary fill-secondary" />
                 </div>
                 <div>
                   <p className="text-[11px] font-bold text-text-dark">1000+</p>

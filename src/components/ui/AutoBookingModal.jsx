@@ -68,11 +68,11 @@ export default function AutoBookingModal() {
                   </p>
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-sm text-text-muted">
-                      <ShieldCheck className="w-4 h-4 text-green-500" />
+                      <ShieldCheck className="w-4 h-4 text-secondary" />
                       <span>Certified Professional Care</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-text-muted">
-                      <Clock className="w-4 h-4 text-green-500" />
+                      <Clock className="w-4 h-4 text-secondary" />
                       <span>9:00 AM – 8:00 PM (Weekdays)</span>
                     </div>
                   </div>

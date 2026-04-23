@@ -40,7 +40,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between transition-all duration-500 h-14 md:h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+            <div className="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
               <PawPrint className="w-5 h-5 text-white" />
             </div>
             <div className="flex flex-col leading-tight">

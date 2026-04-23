@@ -93,7 +93,7 @@ export default function AboutPreview() {
                   transition={{ duration: 0.4, delay: 0.3 + i * 0.1 }}
                   className="text-center p-3 rounded-xl bg-white border border-border-soft"
                 >
-                  <stat.icon className="w-5 h-5 text-primary mx-auto mb-1.5" />
+                  <stat.icon className="w-5 h-5 text-secondary mx-auto mb-1.5" />
                   <p className="text-lg font-bold text-text-dark">{stat.value}</p>
                   <p className="text-[11px] text-text-muted">{stat.label}</p>
                 </motion.div>

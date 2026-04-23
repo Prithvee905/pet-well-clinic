@@ -7,12 +7,12 @@
    ============================================ */
 
 @theme {
-  /* Brand Colors — Green/Teal matching Pet Well Clinic branding */
-  --color-primary: #2A9D8F;
-  --color-primary-dark: #1F7A6F;
-  --color-primary-light: #6EC6B8;
-  --color-secondary: #3CB8A9;
-  --color-secondary-light: #A8DED5;
+  /* Brand Colors — Matching the provided image palette */
+  --color-primary: #0F2F4B; /* Deep Navy Blue for buttons and headings */
+  --color-primary-dark: #081D2F;
+  --color-primary-light: #1A3A5A;
+  --color-secondary: #2D9C64; /* Vibrant Green from logo and labels */
+  --color-secondary-light: #48B77E;
   --color-accent: #E9C46A;
   --color-accent-light: #F4DFA0;
 

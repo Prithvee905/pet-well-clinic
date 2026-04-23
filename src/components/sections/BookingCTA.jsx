@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { PawPrint } from 'lucide-react';
 import Button from '@/components/ui/Button';
+import { clinicInfo } from '@/data/siteConfig';
 
 export default function BookingCTA() {
   return (

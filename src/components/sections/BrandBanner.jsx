@@ -12,7 +12,7 @@ export default function BrandBanner() {
           className="flex items-center justify-center gap-4 text-center"
         >
           <PawPrint className="w-5 h-5 text-white/40 hidden sm:block" />
-          <h2 className="text-white text-sm sm:text-base md:text-lg font-bold tracking-wider uppercase">
+          <h2 className="!text-white text-sm sm:text-base md:text-lg font-bold tracking-wider uppercase">
             Professional Care for Your Purr-fect Friend
           </h2>
           <PawPrint className="w-5 h-5 text-white/40 hidden sm:block" />

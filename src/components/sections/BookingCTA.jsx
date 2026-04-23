@@ -21,11 +21,11 @@ export default function BookingCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold !text-white mb-4 leading-tight">
             Give Your Pet the Care <br className="hidden sm:block" />
             They Deserve
           </h2>
-          <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto mb-8">
+          <p className="!text-white/90 text-base md:text-lg max-w-xl mx-auto mb-8">
             Schedule a visit at Petwell Clinic and experience compassionate,
             expert veterinary care for your beloved companion.
           </p>

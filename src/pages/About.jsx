@@ -5,7 +5,6 @@ import {
   Heart,
   Sparkles,
   Award,
-  Shield,
   Users,
   PawPrint,
 } from 'lucide-react';
@@ -15,18 +14,18 @@ import Button from '@/components/ui/Button';
 const values = [
   {
     icon: Heart,
-    title: 'Compassion First',
-    desc: 'Every animal is treated with gentleness and respect, as if they were our own.',
+    title: 'Care',
+    desc: 'Every animal is treated with gentleness, compassion, and respect — as if they were our own.',
   },
   {
-    icon: Shield,
-    title: 'Trust & Transparency',
-    desc: 'Honest communication about your pet\'s health, treatment options, and costs.',
+    icon: Stethoscope,
+    title: 'Heal',
+    desc: 'Expert veterinary treatments powered by modern diagnostics and evidence-based medicine.',
   },
   {
     icon: Sparkles,
-    title: 'Modern & Clean',
-    desc: 'A hygienic, well-equipped clinic that meets the highest standards of care.',
+    title: 'Thrive',
+    desc: 'Helping your pets live their healthiest, happiest lives through preventive care and wellness support.',
   },
 ];
 

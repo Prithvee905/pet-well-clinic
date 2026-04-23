@@ -22,8 +22,8 @@ export default function Home() {
 
       <Hero />
       <ServicesPreview />
-      <PricingPlans />
       <AboutPreview />
+      <PricingPlans />
       <WhyChooseUs />
       <GalleryPreview />
       <Testimonials />

@@ -13,6 +13,14 @@ export default function AboutPreview() {
   return (
     <section className="section-padding bg-bg-blush">
       <div className="container-main">
+        {/* Mobile Heading */}
+        <div className="lg:hidden">
+          <SectionHeading
+            title="Meet Dr. Swathi"
+            subtitle="Dedicated to the well-being of every pet that walks through our doors."
+            centered={false}
+          />
+        </div>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Doctor Image Placeholder */}
           <motion.div
@@ -51,11 +59,14 @@ export default function AboutPreview() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <SectionHeading
-              title="Meet Dr. Swathi"
-              subtitle="Dedicated to the well-being of every pet that walks through our doors."
-              centered={false}
-            />
+            {/* Desktop Heading */}
+            <div className="hidden lg:block">
+              <SectionHeading
+                title="Meet Dr. Swathi"
+                subtitle="Dedicated to the well-being of every pet that walks through our doors."
+                centered={false}
+              />
+            </div>
 
             <p className="text-text-muted leading-relaxed mb-4">
               With years of compassionate veterinary experience, Dr. Swathi

@@ -20,7 +20,7 @@ const reasons = [
   },
   {
     icon: ClipboardCheck,
-    title: 'Evidence Based Pet Care',
+    title: 'Evidence-Based Pet Care',
     desc: 'We follow the latest veterinary research and evidence-based protocols to ensure the best outcomes for your pet.',
   },
   {

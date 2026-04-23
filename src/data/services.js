@@ -27,7 +27,7 @@ export const services = [
   {
     id: 'ultrasound',
     icon: ScanLine,
-    title: 'Diagnosis Support & Ultrasound',
+    title: 'Diagnostic Support & Ultrasound',
     shortDesc: 'Advanced ultrasound imaging and diagnostic tools for accurate, non-invasive health assessments.',
     fullDesc: 'Our diagnostic capabilities include ultrasound imaging, allowing us to visualize internal organs in real-time. This non-invasive technology helps us diagnose conditions quickly and develop effective treatment plans without unnecessary procedures.',
   },

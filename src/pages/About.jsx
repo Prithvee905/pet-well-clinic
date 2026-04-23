@@ -98,7 +98,7 @@ export default function About() {
               >
                 <Award className="w-5 h-5 text-accent" />
                 <span className="text-xs font-semibold text-text-dark">
-                  Experienced Veterinarian
+                  Friendly Neighborhood Care
                 </span>
               </motion.div>
             </motion.div>

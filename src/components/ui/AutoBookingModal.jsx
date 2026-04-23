@@ -64,7 +64,7 @@ export default function AutoBookingModal() {
               <div className="space-y-6 mb-8">
                 <div className="bg-bg-blush rounded-2xl p-5 border border-border-soft">
                   <p className="text-[15px] text-text-dark font-medium leading-relaxed mb-4">
-                    Get a professional doctor consultation for just <span className="text-primary font-bold text-lg">₹399</span> (Save ₹200).
+                    Get a professional doctor consultation for just <span className="text-secondary font-bold text-xl">₹399</span> <span className="text-sm text-text-muted line-through ml-1">₹599</span> (Save ₹200).
                   </p>
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-sm text-text-muted">

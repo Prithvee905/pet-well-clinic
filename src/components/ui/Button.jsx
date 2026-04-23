@@ -111,7 +111,7 @@ export default function Button({
 
   if (to) {
     return (
-      <Link to={to} className={wrapperClasses}>
+      <Link to={to} className={wrapperClasses} onClick={onClick}>
         <MagneticContent {...sharedProps}>{content}</MagneticContent>
       </Link>
     );

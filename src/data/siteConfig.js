@@ -12,7 +12,9 @@ export const clinicInfo = {
   phone: '+91 98765 43210',
   whatsapp: '+919876543210',
   email: 'care@petwellclinic.com',
-  address: '123, Green Park Colony, Main Road, Hyderabad, Telangana 500032',
+  address: 'Pet Well Clinic, Sanjay Apartment, Anandbagh, Moula Ali, Hyderabad, Telangana 500047',
+  mapsLink: 'https://maps.app.goo.gl/GxnXvwgGVxBJqTfr5',
+  mapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3806.084649350362!2d78.5430883!3d17.4556621!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bffc12154c1%3A0xf2522872a9aa4f5c!2sPet%20well%20clinic!5e0!3m2!1sen!2sin!4v1777026479039!5m2!1sen!2sin',
   hours: {
     weekdays: '9:00 AM – 8:00 PM',
     saturday: '9:00 AM – 6:00 PM',

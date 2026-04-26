@@ -132,9 +132,14 @@ export default function Contact() {
                     <p className="text-sm font-medium text-text-dark">
                       Clinic Address
                     </p>
-                    <p className="text-sm text-text-muted mt-0.5">
+                    <a 
+                      href={clinicInfo.mapsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-text-muted mt-0.5 hover:text-primary transition-colors block"
+                    >
                       {clinicInfo.address}
-                    </p>
+                    </a>
                   </div>
                 </div>
 
@@ -178,17 +183,19 @@ export default function Contact() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="rounded-2xl overflow-hidden border border-border-soft shadow-[var(--shadow-card)] h-full min-h-[380px] bg-gradient-to-br from-bg-pink-soft to-bg-blue-soft flex items-center justify-center"
+              className="rounded-2xl overflow-hidden border border-border-soft shadow-[var(--shadow-card)] h-full min-h-[450px]"
             >
-              <div className="text-center p-8">
-                <MapPin className="w-10 h-10 text-primary/30 mx-auto mb-3" />
-                <p className="text-sm text-text-muted font-medium">
-                  Google Maps embed
-                </p>
-                <p className="text-xs text-text-light mt-1 max-w-xs">
-                  {clinicInfo.address}
-                </p>
-              </div>
+              <iframe
+                src={clinicInfo.mapsEmbedUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Petwell Clinic Location"
+                className="grayscale hover:grayscale-0 transition-all duration-700"
+              ></iframe>
             </motion.div>
           </div>
         </div>

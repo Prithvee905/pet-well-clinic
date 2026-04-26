@@ -34,6 +34,7 @@ const contactItems = [
     icon: MapPin,
     title: 'Visit Us',
     content: clinicInfo.address,
+    href: clinicInfo.mapsLink,
     color: 'bg-accent/20 text-amber-600',
   },
 ];
@@ -90,17 +91,19 @@ export default function ContactPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="rounded-2xl overflow-hidden border border-border-soft shadow-[var(--shadow-card)] h-[280px] md:h-[320px] bg-gradient-to-br from-bg-pink-soft to-bg-blue-soft flex items-center justify-center"
+          className="rounded-2xl overflow-hidden border border-border-soft shadow-[var(--shadow-card)] h-[350px] md:h-[400px]"
         >
-          <div className="text-center">
-            <MapPin className="w-8 h-8 text-primary/40 mx-auto mb-2" />
-            <p className="text-sm text-text-muted font-medium">
-              Map embed will appear here
-            </p>
-            <p className="text-xs text-text-light mt-1">
-              {clinicInfo.address}
-            </p>
-          </div>
+          <iframe
+            src={clinicInfo.mapsEmbedUrl}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Petwell Clinic Location"
+            className="grayscale hover:grayscale-0 transition-all duration-700"
+          ></iframe>
         </motion.div>
       </div>
     </section>

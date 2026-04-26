@@ -87,7 +87,14 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5 text-sm text-gray-400">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                <span>{clinicInfo.address}</span>
+                <a 
+                  href={clinicInfo.mapsLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-primary transition-colors"
+                >
+                  {clinicInfo.address}
+                </a>
               </li>
             </ul>
           </div>
